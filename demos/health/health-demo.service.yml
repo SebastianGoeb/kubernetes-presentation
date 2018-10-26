@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-app
+  name: health-demo
 spec:
   selector:
-    app: my-app
+    app: health-demo
   ports:
     - name: http
       protocol: TCP

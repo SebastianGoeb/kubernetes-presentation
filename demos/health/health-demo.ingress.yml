@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: health-demo
+spec:
+  rules:
+    - host: health.minikube.info
+      http:
+        paths:
+          - backend:
+              serviceName: health-demo
+              servicePort: 8080

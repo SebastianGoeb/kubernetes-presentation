@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app
+  name: health-demo
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: my-app
+      app: health-demo
   template:
     metadata:
       labels:
-        app: my-app
+        app: health-demo
     spec:
       containers:
-      - name: my-app
+      - name: health-demo
         image: python
         command:
         - sh

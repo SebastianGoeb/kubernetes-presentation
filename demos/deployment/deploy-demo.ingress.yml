@@ -1,12 +1,12 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: my-app
+  name: deploy-demo
 spec:
   rules:
-    - host: minikube.info
+    - host: deploy.minikube.info
       http:
         paths:
           - backend:
-              serviceName: my-app
+              serviceName: deploy-demo
               servicePort: 8080
