@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: my-app
+spec:
+  rules:
+    - host: minikube.info
+      http:
+        paths:
+          - backend:
+              serviceName: my-app
+              servicePort: 8080
