@@ -36,10 +36,10 @@ spec:
             command:
             - cat
             - /tmp/readiness
-          periodSeconds: 5
+          periodSeconds: 3
         livenessProbe:
           exec:
             command:
             - cat
             - /tmp/liveness
-          periodSeconds: 5
+          periodSeconds: 6
